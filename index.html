@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+  
+  <header>
+    <div class="row collapse">
+      <div class="logo medium-4 columns">
+        <img class="heart" src="img/heart.png" alt="Heart Icon">Valentin&Oacute; 
+      </div>
+      <nav class="medium-8 columns text-right">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Get in Touch</a></li>
+          <li class="login"><a href="#">Beta Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <div class="row headline">
+      <div class="medium-12 columns text-center">
+        <h1>Meet someone new, today. Valentin&Oacute;  changes lives.</h1>
+      </div>
+      <div class="medium-9 medium-centered columns text-center">
+        <h2>
+          There are many scenarios in life, we ensure that you choose the best one. With the <strong>best ending</strong> too.
+        </h2>
+      </div>
+    </div>
+
+    <div class="row sign-up">
+      <div class="medium-7 columns medium-centered">
+        <form method="" action="">
+          <div class="row collapse">
+              <div class="medium-8 columns">
+                <input class="email" type="text" placeholder="Your email">
+              </div>
+              <div class="medium-4 columns">
+                <input type="submit" value="Sign Up">
+              </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row social text-center">
+      <ul>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+    </div>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+
+      var viewportWidth = $(window).width();
+      if (viewportWidth < 768) {
+        $('div').removeClass('collapse');
+      };
+    </script>
+
+    
+  </body>
+</html>

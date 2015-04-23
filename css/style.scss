@@ -1,0 +1,62 @@
+$pink: #e13063;
+$purple: #502e4a;
+
+body {color:#fff; font-family: 'Montserrat', sans-serif; background: #36091e url(../img/valentino-background.jpg); background-repeat: no-repeat; background-position:center; background-size:cover;
+}
+
+header {margin-top:33px;
+	.logo {font-size:18px;
+		.heart {padding-right:10px; position:relative; top:-3px;}
+	}
+	nav {
+		ul {margin:0;
+			li {list-style:none; display:inline; font-size:14px; padding:5px 9px;
+				&.login {background:rgba(255,255,255,0.15);}
+			}
+			& li:first-child {padding-left:0;}
+		}
+	}
+}
+
+.headline {padding:253px 0 0;}
+.sign-up {padding:108px 58px 0;}
+.social {padding:32px 0 0;
+	ul {margin:0;
+		li {list-style:none; display:inline; padding:0 4px;
+			a {
+				i {font-size:22px;}
+			}
+		}
+	}
+}
+
+$radius:4px;
+input[type="submit"], input.email {width: 100%; height:55px; border:none; font-size:16px; font-weight:700; }
+input[type="submit"] {background:$pink; border-top-right-radius:$radius; border-bottom-right-radius:$radius; color:#fff; font-size:16px; font-weight:bold;}
+input.email {border-top-left-radius:$radius; border-bottom-left-radius:$radius; padding-left:10px;}
+::-webkit-input-placeholder {color: $purple; font-size:16px; font-weight:700; padding-left:10px;}
+:-moz-placeholder {color: $purple; font-size:16px; font-weight:700; padding-left:10px;}
+::-moz-placeholder { color: $purple; font-size:16px; font-weight:700; padding-left:10px;}
+:-ms-input-placeholder { color: $purple; font-size:16px; font-weight:700; padding-left:10px;}
+
+h1, h2 {color:#fff;}
+h1 {font-size:57.5px; font-weight:400; text-transform:uppercase; line-height:65px; padding-bottom:6px;}
+h2 {font-size:29.5px; font-family: 'Open Sans', sans-serif;   line-height: 37.5px;}
+
+a, a:link {color:#fff; transition:0.25s;}
+a:hover {color:#ddd;}
+
+.h1, .logo, nav, input {text-transform:uppercase;}
+
+.row {max-width:1000px;}
+
+@media (max-width:640px) {
+header{ nav { ul {padding-top:10px;
+			li {display:inline-block; text-align:center; padding:5px 9px; margin:5px 0;width:49%; box-sizing:border-box;} } } } 
+.logo {text-align:center;}
+.headline {padding:50px 0 0;}
+.sign-up {padding:50px 0 0;}
+h1 {font-size:30px; line-height:42px;}
+h2 {font-size:18px; line-height:24px;}
+input[type="submit"], input.email {border-radius:$radius; }
+}
